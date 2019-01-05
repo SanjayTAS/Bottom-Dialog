@@ -1,0 +1,22 @@
+button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                    dialog = new BottomSheetDialog(activity);
+                    dialog.setContentView(R.layout.bottom_layout_transection);
+                    final EditText edt = dialog.findViewById(R.id.edtMakePrice);
+                    Button btnOk = dialog.findViewById(R.id.btnMakePrice);
+                    btnOk.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                    			
+				//Hear Write your code What you want
+				
+                                dialog.dismiss();
+                            }
+                        }
+                    });
+                    dialog.show();
+                }
+            }
+        });
