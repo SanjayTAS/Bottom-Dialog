@@ -1,0 +1,39 @@
+   
+   
+   // This is my main XML View 
+   Button button = findViewbyid(//getView id)
+   button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                  
+                  
+                   BottomSheetDialog dialog;
+                    dialog = new BottomSheetDialog(activity);
+                   //Create a XML layout
+                   dialog.setContentView(//Set your XML layout hear);
+                   //Handel dialog view.  
+                   final EditText edt = dialog.findViewById(R.id.edtMakePrice);
+                   //Handel dialog button click.
+                   Button btnOk = dialog.findViewById(R.id.btnMakePrice);
+   
+                    btnOk.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                                
+                                // Hear write your cod (What you want)
+                           
+                            }
+                        }
+                    });
+               dialog.show();
+      }
+  });
+   
+   
+   
+   
+   
+  
+    
+    //
+    
